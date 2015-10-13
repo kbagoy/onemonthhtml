@@ -1,0 +1,74 @@
+/*
+Project Name: Column Layout
+Author: Chris Castiglione @ onemonthhtml.com
+Developed @ One Month in NYC
+*/
+
+/*----------------------------------------------------------------------------- 
+=01 BASE STYLES 
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+/*Makes the math easier */
+* {
+     -moz-box-sizing: border-box; /* Firefox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear Class */
+.clear {
+	clear: both;
+}
+
+.red {
+	color: Red;
+}
+
+.blue {
+	color: Blue;
+}
+
+.alignleft {
+	float:left;
+	margin: 0 1em 1em 0;
+}
+
+.alignright {
+	float: right;
+		margin: 0 0 1em 1em;
+}
+
+/*----------------------------------------------------------------------------- 
+=02 LAYOUT 
+-----------------------------------------------------------------------------*/
+
+#container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#header {
+	background: Silver;
+	padding: 2em;
+}
+
+#main {
+	background: SkyBlue;
+	padding: 2em;
+	width: 70%;
+	float: left; 
+}
+
+#sidebar {
+	width: 30%;
+	float: left;
+	background: Pink;
+	padding: 2em;
+}
+
+#footer {
+	background: PeachPuff;
+	padding: 2em;
+	padding: 50px;
+}
