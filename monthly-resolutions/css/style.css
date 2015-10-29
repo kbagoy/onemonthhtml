@@ -1,7 +1,7 @@
 /* 
 Project Name: Monthly Resolutions
 Client: One Month
-Author: Christopher Castig | @castig
+Author: Kate Bagoy
 */
 
 
@@ -20,38 +20,28 @@ Author: Christopher Castig | @castig
 	clear: both;
 }
 
-#container {
-	width: 80%;
-	margin: 1em auto;
-
-}
 body {
 	font-family: 'Lato', sans-serif;
 	background-image: url('../images/notebook.png');
 	line-height: 1.5;
+	font-size: 100%;
 }
 
 h1 {
 	margin: 0;
 	font-size: 3em;
+	margin-bottom: 0;
 }
 
 h2 {
 	font-size: 2em;
-	line-height: 0;
-}
-
-h3 {
-	font-size: 1em;
-}
-
-p {
-	font-size: .8em;
+	margin: 0;
 }
 
 a {
 	color: #d35400;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .blockquote {
@@ -64,32 +54,28 @@ a {
 02=LAYOUT  
 -----------------------------------------------------------------------------*/
 
+#container {
+	width: 80%;
+	margin: 1em auto;
+}
+
 #main {
 	width: 70%;
+	padding: 2em;
 	float: left; 
-}
-#main, #sidebar {
+	margin-bottom: 1em;
 	background: white;
-	padding: 1em 2em;
 }
 /*----------------------------------------------------------------------------- 
-03=HEADER  
+03=MAIN  
 -----------------------------------------------------------------------------*/
 
-#header h2 {
-	margin: 0 auto 2em;
-	font-size: 1em;
+.subhead {
+    margin: -.5em auto 2em;
 }
-
-/*----------------------------------------------------------------------------- 
-04=MAIN  
------------------------------------------------------------------------------*/
 
 .post {
-	margin: 4em auto;
-}
-.post:first-of-type {
-	margin-top: 0;
+	margin-bottom: 4em;
 }
 
 .resolution {
@@ -98,40 +84,26 @@ a {
 	border-top: 1px solid #bdc3c7;
 }
 
-/*----------------------------------------------------------------------------- 
-05=SIDEBAR  
------------------------------------------------------------------------------*/
-
 #sidebar {
 	width: 29%;
 	float: left;
 	margin-left:1%;
-	-webkit-box-shadow: -1px 1px 2px 0px rgba(85,85,85,0.8);
-	-moz-box-shadow: -1px 1px 2px 0px rgba(85,85,85,0.8);
-	box-shadow: -1px 1px 2px 0px rgba(85,85,85,0.8);
+	padding: 3em;
+	border-left: 2px solid #bdc3c7;
+	border-bottom: 2px solid #bdc3c7;
+	background: white;
 }
 
 #sidebar div {
-	margin: 3em auto;
+	margin-bottom: 3em;
 }
 
-#sidebar div:first-of-type {
-	margin-top: 0;
-}
 #author img {
 	border-radius: 50%;
 }
 
 /*----------------------------------------------------------------------------- 
-06=FOOTER  
------------------------------------------------------------------------------*/
-
-#footer {
-	padding: .5em 0;
-}
-
-/*----------------------------------------------------------------------------- 
-07=MOBILE  
+04=MOBILE  
 -----------------------------------------------------------------------------*/
 @media (max-width:1080px){
 	#container {
@@ -157,5 +129,3 @@ a {
 		width: auto;
 	}
 }
-
-
