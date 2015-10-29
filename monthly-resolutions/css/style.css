@@ -1,0 +1,161 @@
+/* 
+Project Name: Monthly Resolutions
+Client: One Month
+Author: Christopher Castig | @castig
+*/
+
+
+/*----------------------------------------------------------------------------- 
+01=BASE   
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+.clear {
+	clear: both;
+}
+
+#container {
+	width: 80%;
+	margin: 1em auto;
+
+}
+body {
+	font-family: 'Lato', sans-serif;
+	background-image: url('../images/notebook.png');
+	line-height: 1.5;
+}
+
+h1 {
+	margin: 0;
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+	line-height: 0;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p {
+	font-size: .8em;
+}
+
+a {
+	color: #d35400;
+	text-decoration: none;
+}
+
+.blockquote {
+    padding-left: 5%;
+    border-left: 3px solid #bdc3c7;
+    font-style: italic;
+    line-height: 2;
+}
+/*----------------------------------------------------------------------------- 
+02=LAYOUT  
+-----------------------------------------------------------------------------*/
+
+#main {
+	width: 70%;
+	float: left; 
+}
+#main, #sidebar {
+	background: white;
+	padding: 1em 2em;
+}
+/*----------------------------------------------------------------------------- 
+03=HEADER  
+-----------------------------------------------------------------------------*/
+
+#header h2 {
+	margin: 0 auto 2em;
+	font-size: 1em;
+}
+
+/*----------------------------------------------------------------------------- 
+04=MAIN  
+-----------------------------------------------------------------------------*/
+
+.post {
+	margin: 4em auto;
+}
+.post:first-of-type {
+	margin-top: 0;
+}
+
+.resolution {
+	color: #bdc3c7;
+	line-height: 3;
+	border-top: 1px solid #bdc3c7;
+}
+
+/*----------------------------------------------------------------------------- 
+05=SIDEBAR  
+-----------------------------------------------------------------------------*/
+
+#sidebar {
+	width: 29%;
+	float: left;
+	margin-left:1%;
+	-webkit-box-shadow: -1px 1px 2px 0px rgba(85,85,85,0.8);
+	-moz-box-shadow: -1px 1px 2px 0px rgba(85,85,85,0.8);
+	box-shadow: -1px 1px 2px 0px rgba(85,85,85,0.8);
+}
+
+#sidebar div {
+	margin: 3em auto;
+}
+
+#sidebar div:first-of-type {
+	margin-top: 0;
+}
+#author img {
+	border-radius: 50%;
+}
+
+/*----------------------------------------------------------------------------- 
+06=FOOTER  
+-----------------------------------------------------------------------------*/
+
+#footer {
+	padding: .5em 0;
+}
+
+/*----------------------------------------------------------------------------- 
+07=MOBILE  
+-----------------------------------------------------------------------------*/
+@media (max-width:1080px){
+	#container {
+		width: 98%;
+	}
+	img { 
+	    width: 98%;
+	}
+	#sidebar {
+		padding: 1em;
+	}
+
+}
+@media (max-width : 480px){
+	#main {
+		width: 100%;
+	}
+	#sidebar {
+		width: 100%;
+		margin: 2em auto;
+	}
+	#sidebar img {
+		width: auto;
+	}
+}
+
+
