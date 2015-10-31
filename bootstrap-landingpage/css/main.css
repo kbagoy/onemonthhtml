@@ -1,0 +1,35 @@
+/*----------------------------------------------------------------------------- 
+=MAIN STYLES  
+-----------------------------------------------------------------------------*/
+footer {
+	padding: 2em;
+	background-image: url('../images/grey-texture.jpg');
+	margin-top: 1em;
+}
+
+.main {
+	text-align: center;
+}
+
+.main .row {
+	margin: 5em auto;
+}
+
+.main h2 {
+	margin: 2em;
+}
+
+.grey-text {
+	color: #aaa;
+}
+
+.companies {
+	padding: 4em;
+}
+
+
+.companies h2 {
+	margin: 2em auto;
+	text-align: center;
+	color: #aaa;
+}
